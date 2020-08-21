@@ -239,10 +239,10 @@ def set_buttons():
 if __name__ == '__main__':
     config = configparser.ConfigParser()
     config.sections()
-    BOT_CONFIG_FILE = 'kindle.conf'
+    BOT_CONFIG_FILE = '.\kindle.conf'
     config.read(BOT_CONFIG_FILE)
     log_file = config['DEFAULT']['logfile']
-    TOKEN = 1301181301:AAEOscRwAWecNWnY8QB8XgomSLXiCVTCnnM
+    TOKEN = config['DEFAULT']['TOKEN']
     db = config['SQLITE3']['data_base']
     table = config['SQLITE3']['table']
 
