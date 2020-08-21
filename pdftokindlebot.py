@@ -242,7 +242,7 @@ if __name__ == '__main__':
     BOT_CONFIG_FILE = 'kindle.conf'
     config.read(BOT_CONFIG_FILE)
     log_file = config['DEFAULT']['logfile']
-    TOKEN = config['DEFAULT']['TOKEN']
+    TOKEN = config['1301181301:AAEOscRwAWecNWnY8QB8XgomSLXiCVTCnnM']['TOKEN']
     db = config['SQLITE3']['data_base']
     table = config['SQLITE3']['table']
 
